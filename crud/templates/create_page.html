@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+     <form action="/add/" method="post" class="cr_in">
+	    {% csrf_token %}
+	    <label for="name" class="aza" >
+	    	<p>name:</p><input type="text" name="name"/>
+         </label>
+        <label for="author">
+			<p>author:</p><input type="text" name="author"/>
+    	</label>
+         <label for="price">
+			 <p>price:</p><input type="text" name="price"/>
+         </label>
+	    <input type="submit" value="Create" />
+     </form>
+
+{% endblock %}

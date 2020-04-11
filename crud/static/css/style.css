@@ -1,0 +1,61 @@
+body{
+    background: #323232;
+}
+table a{
+    color: #ff7502;
+    background-color: #b21f2d;
+}
+
+ hr {
+    border: none; /* Убираем границу для браузера Firefox */
+    color: red; /* Цвет линии для остальных браузеров */
+    background-color: #b21f2d; /* Цвет линии для браузера Firefox и Opera */
+    height: 2px; /* Толщина линии */
+
+
+
+   }
+
+header h3, ul {
+    color: green;
+}
+
+footer p {
+    color: red;
+}
+
+
+nvb{
+    padding-left: 10px;
+}
+
+th{
+    height: 50px;
+
+}
+
+table, td, th {
+
+}
+
+table {
+    color: #ff7502;
+    margin-top: 50px;
+     border-collapse: collapse;
+     width: 100%;
+}
+
+th {
+  height: 50px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+header a{
+    color: red;
+}
+.cr_in {
+    color: red;
+    text-align: center;
+}

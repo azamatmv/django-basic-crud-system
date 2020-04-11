@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+ {% block title %}<title>edit-page</title> {% endblock %}
+{% block content %}
+    <div class="container">
+        <form action="/update/{{books.id}}" method="POST">
+            {% csrf_token %}
+            <input type="text" name="name" id="name" value="{{books.name}}" placeholder="{{books.name}}"/>
+            <input type="text" name="author" id="author" value="{{books.author}}" placeholder="{{books.author}}"/>
+            <input type="text" name="price" id="price" value="{{books.price}}" placeholder="{{books.price}}"/>
+            <input type="submit" value="update">
+        </form>
+    </div>
+{% endblock %}
